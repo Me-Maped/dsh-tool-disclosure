@@ -1,0 +1,21 @@
+# One Host policy; no preset or global MCP registration is overwritten.
+- insert:
+    - id: local-tool-disclosure
+      name: '@local/dsh-tool-disclosure'
+      config:
+        bootstrapTools:
+          - bash
+          - pwsh
+          - read
+          - read_image
+          - glob
+          - grep
+          - working_directory
+          - skill
+          - ask_user_question
+          - exit_plan_mode
+          - job_output
+          - job_kill
+          - job_list
+        maxSearchResults: 8
+        descriptionChars: 240

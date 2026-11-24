@@ -1,0 +1,22 @@
+{
+  "name": "@local/dsh-tool-disclosure",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Session-local on-demand tool discovery across DSH presets, preserving native/PTC execution and permissions.",
+  "license": "MIT",
+  "engines": { "node": ">=22.16", "dsh": "0.2.2-rc.5" },
+  "exports": {
+    ".": "./src/tool-disclosure.mjs",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": ["src", "scripts", "tests", "cordis.patch.yml", "locale", "icon.svg", "README.md", "docs", "LICENSE"],
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check src/tool-disclosure.mjs && node --check scripts/dsh-runtime.mjs && npm test",
+    "pack:check": "npm pack --dry-run --ignore-scripts --json"
+  },
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
+}

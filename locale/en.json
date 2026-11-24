@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Session tool disclosure",
+    "description": "Per-Agent tool disclosure across presets. Keeps existing configurable core tools visible; tool_search discovers inherited Host/preset capabilities and tool_activate selects original schemas for the next step. Agent-private registrations remain unchanged. Preserves conditions, permissions and native/PTC execution. Restores session-local state without inheriting parent grants. Not a workflow controller or security sandbox. Version 0.1.0 passes 31 offline checks; model A/B and GUI remain unverified."
+  }
+}

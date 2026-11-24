@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "会话级工具按需披露",
+    "description": "独立 Host 插件，为所有预设提供每 Agent 工具按需披露。保留已存在的可配置 core，其余 Host/预设继承工具由 tool_search 发现、tool_activate 选择，下一 step 公开原始 schema；Agent 私有工具保持原状。保留条件、权限与 native/PTC 执行器；状态从会话日志恢复，父子独立。不是工作流控制器或安全沙箱。0.1.0 离线31项检查通过；模型 A/B 与 GUI 待验证。"
+  }
+}
